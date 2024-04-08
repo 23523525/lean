@@ -195,7 +195,7 @@ async def add_russian(message: types.Message, state: FSMContext):
     )
 
     msg = await message.answer(
-        f'Слово {data['english'], message.text} успешно добавлено'
+        f'Слово {data["english"], message.text} успешно добавлено'
         f'Введите следующее слово на английском'
     )
     await state.update_data(message=msg)
